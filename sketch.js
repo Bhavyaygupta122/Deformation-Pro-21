@@ -27,15 +27,15 @@ function draw() {
     var deformation=0.5 *weight *speed*speed/25009;
     if(deformation>180){
       car.shapeColor="red";
-      text("car is not safe",250,100);
+      text("car is not safe",250,300);
     }
     if(deformation<180 && deformation>100){
       car.shapeColor="yellow";
-      text("car is slightly fast",250,100);
+      text("car is slightly fast",250,300);
     }
     if(deformation<100){
       car.shapeColor="green";
-      text("car is safe to drive",250,100);
+      text("car is safe to drive",250,300);
     }
     console.log(deformation);
   }
